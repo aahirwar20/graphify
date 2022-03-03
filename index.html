@@ -1,75 +1,33 @@
 <html>
     <head>
-    <script src="start.js"></script>
-    <link rel="stylesheet" href="start.css">
-
+        <title>Calculator</title>
+        <script src="start.js"></script>
+        <link rel="stylesheet" href="start.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="angular.js"></script>
+        
     </head>
-    <body>
-        <table style="align-self: center;">
-            <tr>
-                <td colspan="6"><input id="result" type="text"></td>
-            </tr>
-            <div class="inp">
-            <tr>
-                <td> <input type="button" value="7" onclick="dis('7')"></td>
-                <td> <input type="button" value="8" onclick="dis('8')"></td>
-                <td> <input type="button" value="9" onclick="dis('9')"></td>
-                <td> <input type="button" value="+" onclick="dis('+')"></td>
-                
-                <td> <input type="button" value="=" onclick="solve()"></td>
-
-            </tr>
-            <tr>
-                <td> <input type="button" value="4" onclick="dis('4')"></td>
-                <td > <input type="button" value="5" onclick="dis('5')"></td>
-                <td > <input type="button" value="6" onclick="dis('6')"></td>
-                <td > <input type="button" value="-" onclick="dis('-')"></td>
-                <td > <input type="button" value="clr" onclick="clr()"></td>
+        <body ng-app="myapp">
+            <diV class="top" >
                
-
-            </tr>
-            <tr>
-                <td > <input type="button" value="1" onclick="dis('1')"></td>
-                <td> <input type="button" value="2" onclick="dis('2')"></td>
-                <td> <input type="button" value="3" onclick="dis('3')"></td>
-                <td> <input type="button" value="*" onclick="dis('*')"></td>
-                <td > <input type="button" value="DEL" onclick="del()"></td>
-            </tr>
-            <tr>
-               
-                <td> <input type="button" value="0" onclick="dis('0')"></td>
-                <td> <input type="button" value="." onclick="dis('.')"></td>
-                <td> <input type="button" value="^" onclick="dis('^')"></td>
-                <td > <input type="button" value="/" onclick="dis('/')"></td>
-                <td> <input type="button" value="exp" onclick="dis('exp')"></td>
-                
-                
-               
-
-            </tr>
-            <tr>
-                <td> <input type="button" value="(" onclick="dis('(')"></td>
-                <td> <input type="button" value=")" onclick="dis(')')"></td>
-                <td> <input type="button" value="sin" onclick="dis('sin')"></td>
-                <td> <input type="button" value="cos" onclick="dis('cos')"></td>
-                <td> <input type="button" value="tan" onclick="dis('tan')"></td>
-            </tr>
-            <tr>
-                <td> <input type="button" value="sqrt" onclick="dis('sqrt')"></td>
-                <td> <input type="button" value="log" onclick="dis('log')"></td>
-                <td> <input type="button" value="^2" onclick="dis('^2')"></td>
-                <td> <input type="button" value="^3" onclick="dis('^3')"></td>
-                <td> <input type="button" value="" onclick="dis('')"></td>
-            </tr>
-        </div>
-
-
-        </table>
-        <div>
-            <h1>instruction</h1>
-            <p>-put this way sin(55)</p>
-            <p>-put for power - (2)^6</p>
-        </div>
-
-    </body>
-</html>
+            </diV>
+            <div class="left-top">
+                <i class="material-icons">reorder</i>
+                <i class="material-icons">chevron_right</i>
+                <table > <button class="fl_t"></button>
+                   <a href="#!c_cal"><button class="l_t">Clasic Calculator</button></a>
+                   <a href="#!s_cal"> <button class="l_t">Scientific Calculator</button></a>
+                   <a href="#!unit"><button class="l_t">Unit</button></a>
+                   <a href="#!temp"><button class="l_t">Tempreture</button></a>
+                   <a href="#!prog"><button class="l_t">Programming</button></a>
+                </table>
+            </div>
+            <div class="cal_page" ng-view ></div>
+            <h1>Welcome to Calculator</h1>
+    
+        </body>
+        <footer></footer>
+    </html>
+    

@@ -5,32 +5,51 @@ input[type="text"]{
     padding: 0px;
     border:  solid ;
     border-color: rgb(122, 121, 119);
-    width: 360px;
-    height: 80px;
+    width: 800px;
+    height: 100px;
     font-size:30px;
     border-radius: 10px;
     padding-left: 10px;
 
 }
-
+body{
+    overflow-x: hidden;
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img2.jpg") no-repeat 0 50%;
+    
+}
 input[type="button"]{
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
-    font-size: 20px;
-    height: 40px;
-    background-color: rgba(48, 47, 47, 0.959);
+    font-size: 25px;
+    height: 68px;
+    background-color: rgba(22, 22, 22, 0.9);
     
     border: solid;
-    width: 70px;
+    width: 150px;
     border-radius: 7px;
     
 }
+input[type="button"]:active{
+    animation: button1 0s forwards;
+}
+@keyframes button1 {
+    to {background-color: rgb(148, 49, 240);}
+}
+input[type="button"]:hover{
+    animation: button2 0s forwards;
+}
+@keyframes button2 {
+    to {background-color: rgb(26, 25, 25,0.8)}
+}
 
-table{
+.cal{
+    position: relative;
     border-color: black;
     border: solid;
     border-radius: 7px;
     background-color: rgb(253, 252, 252);
+ left: 100px;
+ top: -5px;
 }
 .inp{
     color: aqua;
@@ -45,4 +64,83 @@ table{
     border-radius: 7px;
     left: 11px;
     
+}
+.top{
+    position: relative;
+    width: 102%;
+    height: 8%;
+    top: -10px;
+    left: -1%;
+
+    margin-top: 0px;
+
+    background-color: rgb(17, 17, 17,0.9);
+}
+.left-top{
+    position: absolute;
+    height: 150%;
+    width: 2%;
+    top: 8%;
+    background-color: rgb(243, 248, 253,0.9);
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 1px 1px rgb(141, 141, 141)  ,4px 1px 1px rgb(223, 222, 222) ;
+}
+.left-top:hover{
+animation: left_slide 300ms linear forwards ;
+}
+@keyframes left_slide{
+    to {width: 20%;}
+}
+.ins{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+
+}
+.l_t{
+    position: relative;
+    border-color: rgb(20, 17, 17);
+    color: rgb(216, 211, 211);
+    font-size: 20px;
+    height: 40px;
+    background-color: rgba(22, 22, 22, 0.9);
+    
+    border: solid;
+    width: 210px;
+    border-radius: 7px;
+    left: 40px;
+}
+.l_t:hover{
+    animation: button2 0s forwards;
+}
+.l_t:focus{
+    animation: button1 1s forwards;
+}
+.fl_t{
+    position: relative;
+    border-color: rgb(20, 17, 17 ,0.0);
+    color: rgb(216, 211, 211);
+    font-size: 20px;
+    height: 40px;
+    background-color: rgba(22, 22, 22, 0.0);
+    
+   
+    width: 210px;
+    border-radius: 7px;
+    left: 40px;
+}
+
+.cal_page{
+    position: relative;
+    left: 30px;
+    
+}
+footer{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: -100%;
+    left: 0px;
+    background-color: rgb(233, 233, 233);
 }
