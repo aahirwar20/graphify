@@ -6,6 +6,7 @@
  - tempreture Calculator
  - unit Calculator
  - Programming Calculator
+ ```bash
 
 [click here](https://aahirwar20.github.io/calculator/)
 # contribuion
@@ -67,9 +68,9 @@
 # For calculator
 [click here](https://aahirwar20.github.io/calculator/)
  https://aahirwar20.github.io/calculator
-```bash
+
 [click here](https://aahirwar20.github.io/calculator/)
 # contribuion
-```bash
+
 Pull requests are welcome. For major changes,
 please open an issue first to discuss what you would like to change.
