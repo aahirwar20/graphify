@@ -14,7 +14,8 @@ input[type="text"]{
 }
 body{
     overflow-x: hidden;
-    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img2.jpg") no-repeat 0 50%;
+    height: 1500px;
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img/img2.jpg") no-repeat 0 50%;
     
 }
 input[type="button"]{
@@ -66,12 +67,13 @@ input[type="button"]:hover{
     
 }
 .top{
-    position: relative;
+
+    position:  fixed ;
     width: 102%;
     height: 8%;
-    top: -10px;
+    top: 0px;
     left: -1%;
-
+ z-index: 10;
     margin-top: 0px;
 
     background-color: rgb(17, 17, 17,0.9);
@@ -79,24 +81,73 @@ input[type="button"]:hover{
 .left-top{
     position: absolute;
     height: 150%;
-    width: 2%;
+    width: 0%;
     top: 8%;
     background-color: rgb(243, 248, 253,0.9);
-    z-index: 1;
+    z-index: 3;
     overflow: hidden;
     box-shadow: 2px 1px 1px rgb(141, 141, 141)  ,4px 1px 1px rgb(223, 222, 222) ;
 }
-.left-top:hover{
-animation: left_slide 300ms linear forwards ;
+
+
+
+@keyframes right_slide{
+    to {width: 20%;}
 }
 @keyframes left_slide{
-    to {width: 20%;}
+    from {width: 20%;}
+    to {width: 0%;}
 }
 .ins{
     position: absolute;
     top: 5%;
     right: 3%;
 
+}
+#b1{position: relative;
+    
+    color: aliceblue;
+    border-width: 0px;
+    font-size: 20px;
+    height: 40px;
+    background-color: rgba(22, 22, 22, 0);
+    
+    border: none;
+    width: 100px;
+    border-radius: 7px;
+    left: -5px;}
+.data{
+    position: relative;
+    background-color: rgb(249, 248, 248);
+    height: 60px;
+    width: 300px;
+    z-index: 2;
+    left: 0%;
+    top:0%
+}
+.o_data{position: relative;
+    background-color: rgb(249, 248, 248);
+    height: 60px;
+    width: 300px;
+    z-index: 2;
+   
+    left: 32%;
+    top: 50%;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+#last_data{
+    position: relative;
+    top:120px;
+    left:-20px;
+}
+.data_box{
+    position: absolute;
+    
+    height: 100px;
+    width: 500px;
+    left: 70%;
+    top:25%;
 }
 .l_t{
     position: relative;
@@ -131,16 +182,150 @@ animation: left_slide 300ms linear forwards ;
     left: 40px;
 }
 
+
 .cal_page{
     position: relative;
-    left: 30px;
+    left: 0px;
+    top: 40px;
+    background-color: rgb(250, 244, 237);
+    border-radius: 20px;
+    overflow: hidden;
+    height: fit-content;
     
 }
 footer{
     position: absolute;
     height: 40%;
     width: 100%;
-    bottom: -100%;
+    bottom: -1000px;
     left: 0px;
     background-color: rgb(233, 233, 233);
+}
+.b2{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    left: 100px;
+    background-color: rgb(255, 0, 102);
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: aliceblue;
+    top: -3px;
+}
+.scroll_design{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(240, 240, 235);
+    border-radius: 10px;
+    margin: 5% auto;
+    text-align: center;
+    padding: auto;
+    overflow: hidden;
+    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
+
+}
+.web_part2{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: beige;
+    border-radius: 10px;
+    text-align: center;
+    display: inline block;
+    padding: auto;
+    overflow: hidden;
+   
+}
+.scroll_box{
+    position: absolute;
+    height: 400px;
+    width: 300px ;
+    text-align: center;
+    top: 0px;
+ margin-right: 40px;
+    
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
+    
+}
+#sb1{
+    left: -1200px;
+    
+    animation: scroll1 12s linear 2ms infinite backwards ;
+}
+#sb2{
+    left: -800px;
+   
+    animation: scroll2 12s linear 2ms infinite backwards ;
+}
+#sb3{
+    left: -400px;
+   
+    animation: scroll3 12s linear 2ms infinite backwards ;
+}
+#sb4{
+    left: 0px;
+    
+    animation: scroll4 12s linear 2ms infinite backwards ;
+}
+@keyframes scroll1{
+    0% {left: -1200px;}
+    23% {left: -1200px;}
+    25%{left: -800px;}
+    48% {left: -800px;}
+    50%{left: -400;}
+   
+    73% {left: -400px;}
+    75%{left: 0px;}
+    98%{left: 0px;}
+    100% {left: 400px;}
+}
+@keyframes scroll2{
+    0% {left: -800px;}
+    23% {left: -800px;}
+    25%{left: -400px;}
+    48% {left: -400px;}
+    50%{left: 0;}
+   
+    73% {left: 0px;}
+    75%{left: 400px;}
+    98%{left: 400px;}
+    100% {left: 800px;}
+}
+@keyframes scroll3{
+    0% {left: -400px;}
+    23% {left: -400px;}
+    25%{left: 0px;}
+    48% {left: 0px;}
+    50%{left: 400;}
+   
+    73% {left: 400px;}
+    75%{left: 800px;}
+    98%{left: 800px;}
+    100% {left: 1200px;}
+}
+@keyframes scroll4{
+    0% {left: 0px;}
+    23% {left: 0px;}
+    25%{left: 400px;}
+    48% {left:400px;}
+    50%{left: 800;}
+   
+    73% {left: 800px;}
+    75%{left: 1200px;}
+    98%{left: 1200px;}
+    100% {left: 1600px;}
+}
+
+.scroll_box_pic{
+    position: relative;
+    margin: 5% auto;
+    height: 60px;
+    width: 60;
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 50%;
+
 }

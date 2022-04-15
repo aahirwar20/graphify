@@ -1,14 +1,34 @@
 <head>
-    <script src="start.js"></script>
-    <link rel="stylesheet" href="start.css">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="../calculator/img/img3.jpg" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../calculator/script/start.js"></script>
+    
+    <link rel="stylesheet" href="../calculator/start.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-    <script src="angular.js"></script>
+    <script src="../calculator/script/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
     
 </head>
-<body>
-    
+<body >
+    <diV class="top" >
+        <button id="b1"><i class="material-icons">reorder</i></button>
+        <a href="../calculator/index.html"><button class="b2">Home</button></a>
+    </diV>
+    <div class="left-top" id="lt">
+       
+        <table > <button class="fl_t"></button>
+            <a href="./c_calculator.htm"><button class="l_t">Clasic Calculator</button></a>
+            <a href="./s_calculator.htm"> <button class="l_t">Scientific Calculator</button></a>
+            <a href="./unit.htm"><button class="l_t">Unit</button></a>
+            <a href="./tempreture.htm"><button class="l_t">Tempreture</button></a>
+            <a href="./Programming.htm"><button class="l_t">Programming</button></a>
+            <a href="./Graph.htm"><button class="l_t">Graph</button></a>
+         </table>
+</div>
+  <h1>Calculator</h1>
     <table style="align-self: center;" class="cal">
         <tr>
             <td colspan="6"><input id="result" type="text"></td>
@@ -75,3 +95,4 @@
         <p>-put for power - (2)^6</p>
     </div>
 </body>
+<footer></footer>

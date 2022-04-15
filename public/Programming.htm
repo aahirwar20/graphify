@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="icon" type="image/png" href="../calculator/img/img3.jpg" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../calculator/script/start.js"></script>
+        
+        <link rel="stylesheet" href="../calculator/start.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="../calculator/script/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>        
+    </head>
+    <body ng-app="myapp" ng-controller="myctr">
+        <diV class="top" >
+            <button id="b1"><i class="material-icons">reorder</i></button>
+            <a href="../calculator/index.html"><button class="b2">Home</button></a>
+        </diV>
+        <div class="left-top" id="lt">
+            
+            <table > <button class="fl_t"></button>
+                <a href="./c_calculator.htm"><button class="l_t">Clasic Calculator</button></a>
+                <a href="./s_calculator.htm"> <button class="l_t">Scientific Calculator</button></a>
+                <a href="./unit.htm"><button class="l_t">Unit</button></a>
+                <a href="./tempreture.htm"><button class="l_t">Tempreture</button></a>
+                <a href="./Programming.htm"><button class="l_t">Programming</button></a>
+                <a href="./Graph.htm"><button class="l_t">Graph</button></a>
+             </table>
+</div>
+        <h1>Calculator</h1>
+        
+        <div class="web_part2" id="check">
+            <input class="data" id="pid" > 
+           <select id="prevdata">
+               <option value="1" selected="selected">Binary</option>
+               <option  value="2" >Hexadecimal</option>
+               <option value="3">Octal</option>
+               <option value="4">Number</option>
+           </select>
+           <button class="b2" onclick="convert()">Convert</button>
+           <div class="o_data" id="pod" >
+            </div>
+            <select id="last_data">
+                <option value="1">Binary</option>
+                <option value="2">Hexadecimal</option>
+                <option value="3">Octal</option>
+                <option value="4" selected="selected">Number</option>
+            </select>
+        </div>
+        <script src="../calculator/script/programming.js"></script>
+        
+              
+    </body>
+        <footer> </footer>
+    </html>
+    
+      
