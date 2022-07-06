@@ -45,11 +45,11 @@
   Celcius
   Farenheit
   Kelvin
-  ```bash
+  ```
 
   ## Programming
  It able convert these units
- ```bash
+ ```
   Binary
   Number
   Hexadecimal
