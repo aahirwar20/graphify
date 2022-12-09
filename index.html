@@ -2,20 +2,34 @@
     <head>
         <title>Calculator</title>
         <link rel="icon" type="image/png" href="../calculator/img/img3.jpg" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="./script/angular.js"></script>
         <script src="../calculator/script/start.js"></script>
+        
         <link rel="stylesheet" href="start.css">
+        <link rel="stylesheet" href="./design/home.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        
        
-          
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       
+        
         
         
 <body>
     </head>
-<body >
-            <diV class="top" >
+<body   ng-app="myapp" ng-controller="myCtrl">
+   <diV class="top" >
                 <button id="b1"><i class="material-icons">reorder</i></button>
                <a href="./index.html"><button class="b2">Home</button></a>
             </diV>
@@ -34,7 +48,7 @@
             
            
            
-            <h1>Calculator</h1>
+           
             <div class="web_part2">
             <div class="scroll_design">
                 <div class="scroll_box" id="sb1">
@@ -52,8 +66,26 @@
                 <div class="scroll_box" id="sb4"> <div class="scroll_box_pic"><img src="../calculator/img/img2.jpg" style="width: 60px; height: 60px;"></div>
                 <hr><h1>Programming Calculator </h1></div>
 
+    </div></div>
+    
+    <div class="row">
+        <div class="col-md-12" style="padding: 3%;" >
+        <div class="col-md-4"  ng-repeat="x in sends">
+            <div class='box' >
+                <a href="{{x.link}}">
+            <div class="col-md-12">
+                <img src="{{x.img}}"  height="100" width="200">
+            </div> 
+            <h2>{{x.name}}</h2></a>  
+            <p>{{x.data}}</p> 
+            <div class="down-line">
+            <p class="design-circle"></p> </div>
             </div></div>
-            
+        </div>
+    </div>
+        
+
+
                   
         </body>
         <footer></footer>

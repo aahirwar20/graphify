@@ -1,12 +1,14 @@
 <head>
     <title>Calculator</title>
-    <link rel="icon" type="image/png" href="../img/img3.jpg" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../script/start.js"></script>
-    
-    <link rel="stylesheet" href="../start.css">
+    <link rel="icon" type="image/png" href="../calcuator/img/img3.jpg" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../calcuator/script/start.js"></script>
+    <link rel="stylesheet" href="../calcuator/design/c_calculator.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 </head>
 <body >
@@ -25,8 +27,10 @@
             <a href="./Graph.htm"><button class="l_t">Graph</button></a>
          </table>
 </div>
-  <h1>Calculator</h1>
-    <table style="align-self: center;" class="cal">
+  
+  <div class="col-md-12" style="padding-top: 80px;">
+  
+    <table style="align-self: center;" class="table-bordered" >
         <tr>
             <td colspan="6"><input id="result" type="text"></td>
         </tr>
@@ -86,7 +90,8 @@
 
 
     </table>
-    <div class="ins">
+</div>
+    <div class="col-md-12" style="align-items: center;">
         <h1>instruction</h1>
         <p>-put this way sin(55)</p>
         <p>-put for power - (2)^6</p>
