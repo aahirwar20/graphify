@@ -34,7 +34,7 @@ input[type="text"]{
 body{
     position: relative;
     overflow-x: hidden;
-    height: 1500px;
+   
     background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img/img2.jpg") no-repeat 0 50%;
     overflow-y: scroll;
     
@@ -112,10 +112,10 @@ input[type="button"]{
     background-color: rgb(17, 17, 17,0.9);
 }
 .left-top{
-    position: absolute;
-    height: 150%;
+    position: fixed;
+    height: 126%;
     width: 0%;
-    top: 8%;
+    top: 4%;
     background-color: rgb(243, 248, 253,0.9);
     z-index: 3;
     overflow: hidden;
@@ -187,14 +187,16 @@ input[type="button"]{
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
     font-size: 20px;
-    height: 40px;
+    height: 7%;
     background-color: rgba(22, 22, 22, 0.9);
     
     border: solid;
-    width: 210px;
+    width: 95%;
     border-radius: 7px;
-    left: 40px;
+    left: 4%;
 }
+
+
 .l_t:hover{
     animation: button2 0s forwards;
 }
@@ -202,11 +204,11 @@ input[type="button"]{
     animation: button1 1s forwards;
 }
 .fl_t{
-    position: relative;
+    position: static;
     border-color: rgb(20, 17, 17 ,0.0);
     color: rgb(216, 211, 211);
     font-size: 20px;
-    height: 40px;
+    height: 2%;
     background-color: rgba(22, 22, 22, 0.0);
     
    
@@ -232,7 +234,7 @@ footer{
     width: 100%;
    
     left: 0px;
-    bottom: 0px;
+    bottom: -50%;
     background-color: rgb(233, 233, 233);
 }
 .b2{
@@ -263,7 +265,7 @@ footer{
     position: relative;
     height: 400px;
     width: 100%;
-    background-color: beige;
+    background-color: rgb(222, 222, 219);
     border-radius: 10px;
     text-align: center;
     display: inline block;

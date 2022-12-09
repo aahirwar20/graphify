@@ -1,13 +1,18 @@
 <html>
     <head>
         <title>Calculator</title>
-        <link rel="icon" type="image/png" href="../img/img3.jpg" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../script/start.js"></script>
-        <link rel="stylesheet" href="../start.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>        
+        <link rel="icon" type="image/png" href="../img/img3.jpg" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../script/start.js"></script>
+    <link rel="stylesheet" href="../design/graph.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
     </head>
     <body >
         <diV class="top" >
@@ -27,17 +32,18 @@
 
 
         </div>
-        <h1>Calculator</h1>
-        <div class="web_part2">
-        <canvas id="myChart" style="width:100%;max-width:700px;background-color: aliceblue;"></canvas>
+       
+       
+        <canvas id="myChart" style=" position:relative;width:90%;height:50%;background-color: aliceblue;top:70px;"></canvas>
         <button onclick="large_graph()">+</button>
         <button onclick="small_graph()">-</button>
+       
         <script src="../script/graph.js"> </script>
        <div class="data_box">
     <input class="data" id="in1" >
-  <button class="l_t" onclick="plot()">Plot</button>
+  <button class="plot" onclick="plot()">Plot</button>
        </div>
-    </div>
+   
         <div class="cal_page" ng-view ></div>
         
         

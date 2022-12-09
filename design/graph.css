@@ -1,12 +1,13 @@
+
 /* For Mobile */
-@media screen and (max-width: 540px){
+@media screen and (max-width: 540px) {
     .view {
-        width: 100px;
+        width: 400px;
     }
 }
 
 /* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 1200px) {
+@media screen and (min-width: 540px) and (max-width: 780px) {
     .view {
         width: 600px;
     }
@@ -25,29 +26,20 @@ input[type="text"]{
     border-color: rgb(122, 121, 119);
     width: 800px;
     height: 100px;
-    font-size:30px;
+    font-size:100%;
     border-radius: 10px;
     padding-left: 10px;
 
 }
 body{
+    position: relative;
     overflow-x: hidden;
-    height: 1500px;
+   
     background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img/img2.jpg") no-repeat 0 50%;
+    overflow-y: scroll;
     
 }
-input[type="button"]{
-    border-color: rgb(20, 17, 17);
-    color: rgb(216, 211, 211);
-    font-size: 25px;
-    height: 100px;
-    background-color: rgba(22, 22, 22, 0.9);
-    
-    border: solid;
-    width: 150px;
-    border-radius: 7px;
-    
-}
+
 tr{position: relative;
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
@@ -71,6 +63,18 @@ input[type="button"]:hover{
 @keyframes button2 {
     to {background-color: rgb(26, 25, 25,0.8)}
 }
+input[type="button"]{
+    border-color: rgb(20, 17, 17);
+    color: rgb(216, 211, 211);
+    font-size: 25px;
+    height: 100px;
+    background-color: rgba(22, 22, 22, 0.9);
+    
+    border: solid;
+    width: 150px;
+    border-radius: 7px;
+    
+}  
 
 .cal{
     position: relative;
@@ -121,10 +125,10 @@ input[type="button"]:hover{
 
 
 @keyframes right_slide{
-    to {width: 30%;}
+    to {width: 20%;}
 }
 @keyframes left_slide{
-    from {width: 30%;}
+    from {width: 20%;}
     to {width: 0%;}
 }
 .ins{
@@ -148,11 +152,11 @@ input[type="button"]:hover{
 .data{
     position: relative;
     background-color: rgb(249, 248, 248);
-    height: 60px;
-    width: 300px;
+    height: 50%;
+    width: 100%;
     z-index: 2;
     left: 0%;
-    top:0%
+    top:60px;
 }
 .o_data{position: relative;
     background-color: rgb(249, 248, 248);
@@ -171,12 +175,14 @@ input[type="button"]:hover{
     left:-20px;
 }
 .data_box{
-    position: absolute;
+    position: relative;
     
-    height: 100px;
-    width: 500px;
-    left: 70%;
-    top:25%;
+    height: 20%;
+    width: 80%;
+    left: 10%;
+    top:2%;
+    font-size: xx-large;
+    font-weight: 500;
 }
 .l_t{
     position: relative;
@@ -189,8 +195,10 @@ input[type="button"]:hover{
     border: solid;
     width: 95%;
     border-radius: 7px;
-    left: 2%;
+    left: 4%;
 }
+
+
 .l_t:hover{
     animation: button2 0s forwards;
 }
@@ -198,18 +206,17 @@ input[type="button"]:hover{
     animation: button1 1s forwards;
 }
 .fl_t{
-    position: relative;
+    position: static;
     border-color: rgb(20, 17, 17 ,0.0);
     color: rgb(216, 211, 211);
     font-size: 20px;
-    height: 40px;
+    height: 2%;
     background-color: rgba(22, 22, 22, 0.0);
     
    
-    width: 80%;
+    width: 210px;
     border-radius: 7px;
     left: 40px;
-   
 }
 
 
@@ -224,12 +231,12 @@ input[type="button"]:hover{
     
 }
 footer{
-    position: relative;
+    position: absolute;
     height: 20%;
     width: 100%;
    
     left: 0px;
-    bottom: 0px;
+    bottom: -50%;
     background-color: rgb(233, 233, 233);
 }
 .b2{
@@ -249,10 +256,9 @@ footer{
     width: 300px;
     background-color: rgb(240, 240, 235);
     border-radius: 10px;
-    margin: 0% auto;
+    margin: 5% auto;
     text-align: center;
     padding: auto;
-    top:18%;
     overflow: hidden;
     box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
 
@@ -260,8 +266,8 @@ footer{
 .web_part2{
     position: relative;
     height: 400px;
-    width: 105%;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: rgb(222, 222, 219);
     border-radius: 10px;
     text-align: center;
     display: inline block;
@@ -269,95 +275,28 @@ footer{
     overflow: hidden;
    
 }
-.scroll_box{
-    position: absolute;
-    height: 400px;
-    width: 300px ;
-    text-align: center;
-    top: 0px;
- margin-right: 0px;
-    
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
-    
-}
-#sb1{
-    left: -1200px;
-    
-    animation: scroll1 12s linear 2ms infinite backwards ;
-}
-#sb2{
-    left: -800px;
-   
-    animation: scroll2 12s linear 2ms infinite backwards ;
-}
-#sb3{
-    left: -400px;
-   
-    animation: scroll3 12s linear 2ms infinite backwards ;
-}
-#sb4{
-    left: 0px;
-    
-    animation: scroll4 12s linear 2ms infinite backwards ;
-}
-@keyframes scroll1{
-    0% {left: -1200px;}
-    23% {left: -1200px;}
-    25%{left: -800px;}
-    48% {left: -800px;}
-    50%{left: -400;}
-   
-    73% {left: -400px;}
-    75%{left: 0px;}
-    98%{left: 0px;}
-    100% {left: 400px;}
-}
-@keyframes scroll2{
-    0% {left: -800px;}
-    23% {left: -800px;}
-    25%{left: -400px;}
-    48% {left: -400px;}
-    50%{left: 0;}
-   
-    73% {left: 0px;}
-    75%{left: 400px;}
-    98%{left: 400px;}
-    100% {left: 800px;}
-}
-@keyframes scroll3{
-    0% {left: -400px;}
-    23% {left: -400px;}
-    25%{left: 0px;}
-    48% {left: 0px;}
-    50%{left: 400;}
-   
-    73% {left: 400px;}
-    75%{left: 800px;}
-    98%{left: 800px;}
-    100% {left: 1200px;}
-}
-@keyframes scroll4{
-    0% {left: 0px;}
-    23% {left: 0px;}
-    25%{left: 400px;}
-    48% {left:400px;}
-    50%{left: 800;}
-   
-    73% {left: 800px;}
-    75%{left: 1200px;}
-    98%{left: 1200px;}
-    100% {left: 1600px;}
-}
 
-.scroll_box_pic{
+
+.plot{
     position: relative;
-    margin: 5% auto;
-    height: 60px;
-    width: 60;
-    background-color: aqua;
-    overflow: hidden;
-    border-radius: 50%;
-
+    border-color: rgb(20, 17, 17);
+    color: rgb(216, 211, 211);
+    font-size: 20px;
+    height: 25%;
+    background-color: rgba(22, 22, 22, 0.9);
+    
+    border: solid;
+    width: 100%;
+    border-radius: 7px;
+    left: 0px;
+    top:70px;
 }
+
+
+.plot:hover{
+    animation: button2 0s forwards;
+}
+.plot:focus{
+    animation: button1 1s forwards;
+}
+

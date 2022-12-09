@@ -2,13 +2,15 @@
     <head>
         <title>Calculator</title>
         <link rel="icon" type="image/png" href="../img/img3.jpg" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="../script/start.js"></script>
-        
-        <link rel="stylesheet" href="../start.css">
+        <link rel="stylesheet" href="../design/Programming.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>        
+           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     </head>
     <body >
         <diV class="top" >
@@ -28,7 +30,7 @@
 </div>
         <h1>Calculator</h1>
         
-        <div class="web_part2" id="check">
+        <div class="col-md-6" style="position: relative; height: 30%;">
             <input class="data" id="pid" > 
            <select id="prevdata">
                <option value="1" selected="selected">cm</option>
@@ -36,7 +38,9 @@
                <option value="3">m</option>
                <option value="4">ft</option>
            </select>
-           <button class="b2" onclick="convert()">Convert</button>
+           <button class="b5" onclick="convert()">Convert</button>
+        </div>
+           <div class="col-md-6" style="position: relative;height: 30%;">
            <div class="o_data" id="pod" >
             </div>
             <select id="last_data">
