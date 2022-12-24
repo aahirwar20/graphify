@@ -218,7 +218,14 @@ input[type="button"]{
     border-radius: 7px;
     left: 40px;
 }
-
+#prevdata{
+    position: relative;
+    left: 20%;
+    top:5px;
+    height: 5%;
+    width: 500px;
+    font-size: xx-large;
+}
 
 .cal_page{
     position: relative;

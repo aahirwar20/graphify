@@ -15,6 +15,22 @@ function generateData(value, i1, i2, step = 1) {
      xValues.push(m);
    }}
 
+
+   const actions = [
+    {
+      name: 'Randomize',
+      handler(chart) {
+        chart.data.datasets.forEach(dataset => {
+          dataset.data = Utils.numbers({count: chart.data.labels.length, min: 0, max: 100});
+        });
+        chart.update();
+      }
+    },]   
+function type_graph(a){
+console.log(a);
+
+}    
+
 function large_graph(){
 x1=x1-10;
 x2=x2+10;
@@ -41,6 +57,8 @@ var plot=function(){
    t=m.value;
  }
  generateData(t, x1, x2, 1);
+
+ 
  
  new Chart("myChart", {
    type: "line",
@@ -72,17 +90,30 @@ var plot=function(){
       x: {
         display: true,
         title: {
-          display: true
-        }
-      },
-      y: {
-        display: true,
-        title: {
           display: true,
           text: 'Value'
         },
         suggestedMin: -10,
-        suggestedMax: 200
+        suggestedMax: 200,
+        ticks: {
+          // forces step size to be 50 units
+          stepSize: 200
+        }
+      },
+      y: {
+        display: true,
+        type: 'logarithmic',
+        title: {
+          display: true,
+          text: 'Value'
+        },
+        
+        suggestedMin: -10,
+        suggestedMax: 200,
+        ticks: {
+          // forces step size to be 50 units
+          stepSize: 200
+        }
       }
     }
   }

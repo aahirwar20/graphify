@@ -1,15 +1,35 @@
 
 /* For Mobile */
-@media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
+@media screen and (max-width: 1000px) {
+    
+    .top{
+
+        position:fixed ;
+        width: 102%;
+        height: 4%;
+        top: 0px;
+        left: -1%;
+     z-index: 10;
+        margin-top: 0px;
+    
+        background-color: rgb(17, 17, 17,0.9);
     }
 }
 
 /* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .view {
-        width: 600px;
+@media screen and (min-width: 1000px) {
+    
+    .top{
+
+        position:fixed ;
+        width: 102%;
+        height: 7%;
+        top: 0px;
+        left: -1%;
+     z-index: 10;
+        margin-top: 0px;
+    
+        background-color: rgb(17, 17, 17,0.9);
     }
 }
 
@@ -104,18 +124,7 @@ input[type="button"]{
     left: 11px;
     
 }
-.top{
 
-    position:fixed ;
-    width: 102%;
-    height: 50px;
-    top: 0px;
-    left: -1%;
- z-index: 10;
-    margin-top: 0px;
-
-    background-color: rgb(17, 17, 17,0.9);
-}
 .left-top{
     position: fixed;
     height: 126%;
@@ -182,7 +191,10 @@ input[type="button"]{
     left: 20%;
     top: 0%;
     background-color: rgb(40, 40, 40);
-    color: rgb(44, 43, 43);
+    color: rgb(236, 233, 233);
+    font-size: xx-large;
+    padding-top: 5%;
+    padding-left: 2%;
 }
 #last_data{
     position: relative;
@@ -270,14 +282,14 @@ footer{
 }
 .b2{
     position: relative;
-    height: 30px;
+    height: 60%;
     width: 80px;
     left: 30px;
     background-color: rgb(255, 0, 102);
     border-radius: 10px;
     border-width: 2px;
     border-color: aliceblue;
-    bottom: 0px;
+    top: 5%;
 }
 .scroll_design{
     position: relative;
