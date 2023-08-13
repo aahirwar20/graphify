@@ -12,10 +12,6 @@
     }
 }
 
-
-
-
-
 input[type="text"]{
     border-color: rgb(20, 17, 17);
     color: rgb(250, 245, 245);
@@ -30,12 +26,12 @@ input[type="text"]{
     padding-left: 10px;
 
 }
-body{
+/* body{
     overflow-x: hidden;
     height: 1500px;
     background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)) ,url("/img/img2.jpg") no-repeat 0 50%;
     
-}
+} */
 input[type="button"]{
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
@@ -232,132 +228,69 @@ footer{
     bottom: 0px;
     background-color: rgb(233, 233, 233);
 }
-.b2{
-    position: relative;
-    height: 30px;
-    width: 80px;
-    left: 100px;
-    background-color: rgb(255, 0, 102);
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: aliceblue;
-    top: -3px;
+.b2 {
+    border: none;
+    background-color: #007bff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
-.scroll_design{
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(240, 240, 235);
-    border-radius: 10px;
-    margin: 0% auto;
-    text-align: center;
-    padding: auto;
-    top:18%;
-    overflow: hidden;
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
 
+.b2:hover {
+    background-color: #0056b3;
+    color: white;
 }
-.web_part2{
-    position: relative;
-    height: 400px;
-    width: 105%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    text-align: center;
-    display: inline block;
-    padding: auto;
-    overflow: hidden;
-   
+
+.content {
+    padding: 20px;
 }
-.scroll_box{
-    position: absolute;
-    height: 400px;
-    width: 300px ;
-    text-align: center;
-    top: 0px;
- margin-right: 0px;
-    
+
+/* Scroll boxes */
+.scroll_box {
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
-    
-}
-#sb1{
-    left: -1200px;
-    
-    animation: scroll1 12s linear 2ms infinite backwards ;
-}
-#sb2{
-    left: -800px;
-   
-    animation: scroll2 12s linear 2ms infinite backwards ;
-}
-#sb3{
-    left: -400px;
-   
-    animation: scroll3 12s linear 2ms infinite backwards ;
-}
-#sb4{
-    left: 0px;
-    
-    animation: scroll4 12s linear 2ms infinite backwards ;
-}
-@keyframes scroll1{
-    0% {left: -1200px;}
-    23% {left: -1200px;}
-    25%{left: -800px;}
-    48% {left: -800px;}
-    50%{left: -400;}
-   
-    73% {left: -400px;}
-    75%{left: 0px;}
-    98%{left: 0px;}
-    100% {left: 400px;}
-}
-@keyframes scroll2{
-    0% {left: -800px;}
-    23% {left: -800px;}
-    25%{left: -400px;}
-    48% {left: -400px;}
-    50%{left: 0;}
-   
-    73% {left: 0px;}
-    75%{left: 400px;}
-    98%{left: 400px;}
-    100% {left: 800px;}
-}
-@keyframes scroll3{
-    0% {left: -400px;}
-    23% {left: -400px;}
-    25%{left: 0px;}
-    48% {left: 0px;}
-    50%{left: 400;}
-   
-    73% {left: 400px;}
-    75%{left: 800px;}
-    98%{left: 800px;}
-    100% {left: 1200px;}
-}
-@keyframes scroll4{
-    0% {left: 0px;}
-    23% {left: 0px;}
-    25%{left: 400px;}
-    48% {left:400px;}
-    50%{left: 800;}
-   
-    73% {left: 800px;}
-    75%{left: 1200px;}
-    98%{left: 1200px;}
-    100% {left: 1600px;}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
 }
 
-.scroll_box_pic{
-    position: relative;
-    margin: 5% auto;
-    height: 60px;
-    width: 60;
-    background-color: aqua;
-    overflow: hidden;
+.scroll_box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scroll_box_pic {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.scroll_box_pic img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 50%;
+}
+
+.scroll_box h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.scroll_box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.scroll_box a:hover {
+    color: #007bff;
 }

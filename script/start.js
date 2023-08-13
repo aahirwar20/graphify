@@ -18,26 +18,34 @@ $(document).ready(function(){
   
 
 
-function graph_data(val){
-    let k =val;
-    k=k.replace(/e/g,3.14);
-    k=pre_sin(k);
-    k=pre_cos(k); 
-    k=pre_tan(k);
-    k=pre_exp(k);
-    k=pre_sqrt(k);
-    k=pre_log(k);
-    k=pre_pow2(k);
-    k=pre_pow3(k);
-    k=pre_pow(k);
-    var r;
-    
-    if((k=='Inf')||(k.search("Infinity")>=0)||(k>8e21)){r=Infinity}
-    else{ r =eval(k)}
-    
-    
-    return r;
-}
+function graph_data(val) {
+    const preprocessingFunctions = [
+      pre_sin, pre_cos, pre_tan, pre_exp, pre_sqrt, pre_log, pre_pow2, pre_pow3, pre_pow
+    ];
+  
+    let expression = val.replace(/e/g, 3.14);
+  
+    for (const preprocess of preprocessingFunctions) {
+      expression = preprocess(expression);
+    }
+  
+    try {
+      const result = evaluateExpression(expression);
+      return isFinite(result) ?  result : Infinity;
+    } catch (error) {
+      console.error("Error evaluating expression:", error);
+      return 0;
+    }
+  }
+  
+  function evaluateExpression(expression) {
+    return eval(expression);
+  }
+  
+  // Rest of the preprocessing functions...
+  
+  // Event listeners and other code...
+  
 function solve(){
     let k =document.getElementById("result").value
    var r= graph_data(k);

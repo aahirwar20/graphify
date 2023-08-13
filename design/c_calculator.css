@@ -44,11 +44,11 @@ tr{position: relative;
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
     font-size: 25px;
-    height: 100px;
+    height: 90px;
     background-color: rgba(197, 195, 195, 0.9);
     
     border: solid;
-    width: 150px;
+    width: 140px;
     border-radius: 7px;
 }
 input[type="button"]:active{
@@ -67,7 +67,7 @@ input[type="button"]{
     border-color: rgb(20, 17, 17);
     color: rgb(216, 211, 211);
     font-size: 25px;
-    height: 100px;
+    height: 90px;
     background-color: rgba(22, 22, 22, 0.9);
     
     border: solid;
@@ -237,132 +237,35 @@ footer{
     bottom: -50%;
     background-color: rgb(233, 233, 233);
 }
-.b2{
-    position: relative;
-    height: 30px;
-    width: 80px;
-    left: 100px;
-    background-color: rgb(255, 0, 102);
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: aliceblue;
-    top: -3px;
-}
-.scroll_design{
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(240, 240, 235);
-    border-radius: 10px;
-    margin: 5% auto;
-    text-align: center;
-    padding: auto;
-    overflow: hidden;
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
-
-}
-.web_part2{
-    position: relative;
-    height: 400px;
-    width: 100%;
-    background-color: rgb(222, 222, 219);
-    border-radius: 10px;
-    text-align: center;
-    display: inline block;
-    padding: auto;
-    overflow: hidden;
-   
-}
-.scroll_box{
-    position: absolute;
-    height: 400px;
-    width: 300px ;
-    text-align: center;
-    top: 0px;
- margin-right: 40px;
-    
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
-    
-}
-#sb1{
-    left: -1200px;
-    
-    animation: scroll1 12s linear 2ms infinite backwards ;
-}
-#sb2{
-    left: -800px;
-   
-    animation: scroll2 12s linear 2ms infinite backwards ;
-}
-#sb3{
-    left: -400px;
-   
-    animation: scroll3 12s linear 2ms infinite backwards ;
-}
-#sb4{
-    left: 0px;
-    
-    animation: scroll4 12s linear 2ms infinite backwards ;
-}
-@keyframes scroll1{
-    0% {left: -1200px;}
-    23% {left: -1200px;}
-    25%{left: -800px;}
-    48% {left: -800px;}
-    50%{left: -400;}
-   
-    73% {left: -400px;}
-    75%{left: 0px;}
-    98%{left: 0px;}
-    100% {left: 400px;}
-}
-@keyframes scroll2{
-    0% {left: -800px;}
-    23% {left: -800px;}
-    25%{left: -400px;}
-    48% {left: -400px;}
-    50%{left: 0;}
-   
-    73% {left: 0px;}
-    75%{left: 400px;}
-    98%{left: 400px;}
-    100% {left: 800px;}
-}
-@keyframes scroll3{
-    0% {left: -400px;}
-    23% {left: -400px;}
-    25%{left: 0px;}
-    48% {left: 0px;}
-    50%{left: 400;}
-   
-    73% {left: 400px;}
-    75%{left: 800px;}
-    98%{left: 800px;}
-    100% {left: 1200px;}
-}
-@keyframes scroll4{
-    0% {left: 0px;}
-    23% {left: 0px;}
-    25%{left: 400px;}
-    48% {left:400px;}
-    50%{left: 800;}
-   
-    73% {left: 800px;}
-    75%{left: 1200px;}
-    98%{left: 1200px;}
-    100% {left: 1600px;}
+.b2 {
+    border: none;
+    background-color: #007bff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.scroll_box_pic{
-    position: relative;
-    margin: 5% auto;
-    height: 60px;
-    width: 60;
-    background-color: aqua;
-    overflow: hidden;
-    border-radius: 50%;
-
+.b2:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
+/* Footer Styles */
+
+
+.footer-text {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

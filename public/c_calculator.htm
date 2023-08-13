@@ -1,6 +1,6 @@
 <head>
     <title>Calculator</title>
-    <link rel="icon" type="image/png" href="../img/img3.jpg" >
+    <link rel="icon" type="image/png" href="../img/logo.png" >
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../script/start.js"></script>
@@ -20,82 +20,111 @@
     <div class="left-top" id="lt">
        
         <table > <button class="fl_t"></button>
+            <a href="./Graph.htm"><button class="l_t">Graph</button></a>
             <a href="./c_calculator.htm"><button class="l_t">Clasic Calculator</button></a>
             <a href="./s_calculator.htm"> <button class="l_t">Scientific Calculator</button></a>
             <a href="./unit.htm"><button class="l_t">Unit</button></a>
             <a href="./tempreture.htm"><button class="l_t">Tempreture</button></a>
             <a href="./Programming.htm"><button class="l_t">Programming</button></a>
-            <a href="./Graph.htm"><button class="l_t">Graph</button></a>
          </table>
 </div>
-  
-  <div class="col-md-12" style="padding-top: 80px;">
-  
-    <table style="align-self: center;" class="table-bordered"  >
-        <tr>
-            <td colspan="6"><input id="result" type="text"></td>
-        </tr>
+<div class="container-fluid" >
+    <div class="row"  style="margin-top: 55px;">
+        <div class="col-md-4" style="align-items: center;">
+            
+            <h1>Instructions</h1>
+            <p>To calculate the sine of 55 degrees, follow these steps:</p>
+            <ol>
+                <li>Turn on your calculator.</li>
+                <li>Make sure the calculator is in "degree" mode.</li>
+                <li>Locate the "sin" function on your calculator.</li>
+                <li>Enter the value 55.</li>
+                <li>Press the "sin" button to calculate.</li>
+                <li>Your calculator will display the result of sin(55).</li>
+            </ol>
+            
+            <p>To calculate 2 raised to the power of 6, follow these steps:</p>
+            <ol>
+                <li>Turn on your calculator.</li>
+                <li>Locate the "^" or "power" button on your calculator.</li>
+                <li>Enter the base value, which is 2.</li>
+                <li>Press the "^" or "power" button.</li>
+                <li>Enter the exponent value, which is 6.</li>
+                <li>Press the "=" button to calculate.</li>
+                <li>Your calculator will display the result of 2^6.</li>
+            </ol>
+        </div>
+          <div class="col-md-8">
+          
+            <table style="align-self: center;" class="table-bordered"  >
+                <tr>
+                    <td colspan="6"><input id="result" type="text"></td>
+                </tr>
+                
+                <tr>
+                    <td> <input type="button" value="7" onclick="dis('7')"></td>
+                    <td> <input type="button" value="8" onclick="dis('8')"></td>
+                    <td> <input type="button" value="9" onclick="dis('9')"></td>
+                    <td> <input type="button" value="+" onclick="dis('+')"></td>
+                    
+                    <td> <input type="button" style="background-color: rgb(121, 13, 221);" value="=" onclick="solve()"></td>
         
-        <tr>
-            <td> <input type="button" value="7" onclick="dis('7')"></td>
-            <td> <input type="button" value="8" onclick="dis('8')"></td>
-            <td> <input type="button" value="9" onclick="dis('9')"></td>
-            <td> <input type="button" value="+" onclick="dis('+')"></td>
-            
-            <td> <input type="button" style="background-color: rgb(121, 13, 221);" value="=" onclick="solve()"></td>
-
-        </tr>
-        <tr>
-            <td> <input type="button" value="4" onclick="dis('4')"></td>
-            <td > <input type="button" value="5" onclick="dis('5')"></td>
-            <td > <input type="button" value="6" onclick="dis('6')"></td>
-            <td > <input type="button" value="-" onclick="dis('-')"></td>
-            <td > <input type="button" value="clr" onclick="clr()"></td>
-           
-
-        </tr>
-        <tr>
-            <td > <input type="button" value="1" onclick="dis('1')"></td>
-            <td> <input type="button" value="2" onclick="dis('2')"></td>
-            <td> <input type="button" value="3" onclick="dis('3')"></td>
-            <td> <input type="button" value="*" onclick="dis('*')"></td>
-            <td > <input type="button" value="DEL" onclick="del()"></td>
-        </tr>
-        <tr>
-           
-            <td> <input type="button" value="0" onclick="dis('0')"></td>
-            <td> <input type="button" value="." onclick="dis('.')"></td>
-            <td> <input type="button" value="^" onclick="dis('^')"></td>
-            <td > <input type="button" value="/" onclick="dis('/')"></td>
-            <td> <input type="button" value="exp" onclick="dis('exp')"></td>
-            
-            
-           
-
-        </tr>
-        <tr>
-            <td> <input type="button" value="(" onclick="dis('(')"></td>
-            <td> <input type="button" value=")" onclick="dis(')')"></td>
-            <td> <input type="button" value="sin" onclick="dis('sin')"></td>
-            <td> <input type="button" value="cos" onclick="dis('cos')"></td>
-            <td> <input type="button" value="tan" onclick="dis('tan')"></td>
-        </tr>
-        <tr>
-            <td> <input type="button" value="sqrt" onclick="dis('sqrt')"></td>
-            <td> <input type="button" value="log" onclick="dis('log')"></td>
-            <td> <input type="button" value="^2" onclick="dis('^2')"></td>
-            <td> <input type="button" value="^3" onclick="dis('^3')"></td>
-            <td> <input type="button" value="" onclick="dis('')"></td>
-        </tr>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="4" onclick="dis('4')"></td>
+                    <td > <input type="button" value="5" onclick="dis('5')"></td>
+                    <td > <input type="button" value="6" onclick="dis('6')"></td>
+                    <td > <input type="button" value="-" onclick="dis('-')"></td>
+                    <td > <input type="button" value="clr" onclick="clr()"></td>
+                   
+        
+                </tr>
+                <tr>
+                    <td > <input type="button" value="1" onclick="dis('1')"></td>
+                    <td> <input type="button" value="2" onclick="dis('2')"></td>
+                    <td> <input type="button" value="3" onclick="dis('3')"></td>
+                    <td> <input type="button" value="*" onclick="dis('*')"></td>
+                    <td > <input type="button" value="DEL" onclick="del()"></td>
+                </tr>
+                <tr>
+                   
+                    <td> <input type="button" value="0" onclick="dis('0')"></td>
+                    <td> <input type="button" value="." onclick="dis('.')"></td>
+                    <td> <input type="button" value="^" onclick="dis('^')"></td>
+                    <td > <input type="button" value="/" onclick="dis('/')"></td>
+                    <td> <input type="button" value="exp" onclick="dis('exp')"></td>
+                    
+                    
+                   
+        
+                </tr>
+                <tr>
+                    <td> <input type="button" value="(" onclick="dis('(')"></td>
+                    <td> <input type="button" value=")" onclick="dis(')')"></td>
+                    <td> <input type="button" value="sin" onclick="dis('sin')"></td>
+                    <td> <input type="button" value="cos" onclick="dis('cos')"></td>
+                    <td> <input type="button" value="tan" onclick="dis('tan')"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="sqrt" onclick="dis('sqrt')"></td>
+                    <td> <input type="button" value="log" onclick="dis('log')"></td>
+                    <td> <input type="button" value="^2" onclick="dis('^2')"></td>
+                    <td> <input type="button" value="^3" onclick="dis('^3')"></td>
+                    <td> <input type="button" value="" onclick="dis('')"></td>
+                </tr>
+            </div>
+        
+        
+            </table>
+        </div>
     </div>
-
-
-    </table>
 </div>
-    <div class="col-md-12" style="align-items: center;">
-        <h1>instruction</h1>
-        <p>-put this way sin(55)</p>
-        <p>-put for power - (2)^6</p>
-    </div>
+
+   
 </body>
-<footer></footer>
+<footer>
+    <p class="footer-text">
+        &copy; 2021 Smartcalc. All rights reserved. | Designed by
+        <a class="footer-link" href="#">Ankit Ahirwar</a>
+    </p>
+</footer>

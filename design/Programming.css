@@ -280,27 +280,19 @@ footer{
     bottom: -50%;
     background-color: rgb(233, 233, 233);
 }
-.b2{
-    position: relative;
-    height: 60%;
-    width: 80px;
-    left: 30px;
-    background-color: rgb(255, 0, 102);
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: aliceblue;
-    top: 5%;
+.b2 {
+    border: none;
+    background-color: #007bff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
-.scroll_design{
-    position: relative;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(240, 240, 235);
-    border-radius: 10px;
-    margin: 5% auto;
-    text-align: center;
-    padding: auto;
-    overflow: hidden;
-    box-shadow: 2px 1px 1px rgb(225, 224, 224)  ,4px 4px 4px rgb(223, 222, 222) ;
 
+.b2:hover {
+    background-color: #0056b3;
+    color: white;
 }
+

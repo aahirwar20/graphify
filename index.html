@@ -1,95 +1,60 @@
-<html>
-    <head>
-        <title>Calculator</title>
-        <link rel="icon" type="image/png" href="./img/img3.jpg" >
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-        <script src="./script/angular.js"></script>
-        <script src="./script/start.js"></script>
-        
-        <link rel="stylesheet" href="start.css">
-        <link rel="stylesheet" href="./design/home.css">
-        
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="./design/home.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Add your own custom styles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./script/angular.js"></script>
+    <script src="./script/start.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
-        
-       
-        <!-- jQuery library -->
-        
-        
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-       
-        
-        
-        
-<body>
-    </head>
-<body   ng-app="myapp" ng-controller="myCtrl">
-   <diV class="top" >
-                <button id="b1"><i class="material-icons" >reorder</i></button>
-               <a href="./index.html"><button class="b2">Home</button></a>
-            </diV>
-            <div class="left-top" id="lt">
-                
-                <table > <button class="fl_t"></button>
-                   <a href="./public/c_calculator.htm"><button class="l_t">Clasic Calculator</button></a>
-                   <a href="./public/s_calculator.htm"> <button class="l_t">Scientific Calculator</button></a>
-                   <a href="./public/unit.htm"><button class="l_t">Unit</button></a>
-                   <a href="./public/tempreture.htm"><button class="l_t">Tempreture</button></a>
-                   <a href="./public/Programming.htm"><button class="l_t">Programming</button></a>
-                   <a href="./public/Graph.htm"><button class="l_t">Graph</button></a>
-                </table>
-
-            </div>
+<body ng-controller="myCtrl">
+    <div class="top">
+        <button id="b1"><i class="material-icons">reorder</i></button>
+        <a href="./index.html"><button class="b2">Home</button></a>
+    </div>
+    <div class="left-top" id="lt">
+        <table>
+            <button class="fl_t"></button>
+            <a href="./public/Graph.htm"><button class="l_t">Graph</button></a>
+            <a href="./public/c_calculator.htm"><button class="l_t">Clasic Calculator</button></a>
+            <a href="./public/s_calculator.htm"><button class="l_t">Scientific Calculator</button></a>
+            <a href="./public/unit.htm"><button class="l_t">Unit</button></a>
+            <a href="./public/tempreture.htm"><button class="l_t">Tempreture</button></a>
+            <a href="./public/Programming.htm"><button class="l_t">Programming</button></a>
             
-           
-           
-           
-            <div class="web_part2">
-            <div class="scroll_design">
-                <div class="scroll_box" id="sb1">
-                    <div class="scroll_box_pic"><img src="./img/img1.jpg" style="width: 60px; height: 60px;"></div>
-                    <hr>
-                    <h1>Clasic Calculator </h1>
-                </div>
-                <div class="scroll_box" id="sb2">
-                    <div class="scroll_box_pic"><img src="./img/img2.jpg" style="width: 60px; height: 60px;"></div>
-                    <hr>
-                    <h1> Graph </h1>
-                </div>
-                <div class="scroll_box" id="sb3"> <div class="scroll_box_pic"><img src="./img/img1.jpg" style="width: 60px; height: 60px;"></div>
-                 <hr><h1>Unit Calculator </h1></div>
-                <div class="scroll_box" id="sb4"> <div class="scroll_box_pic"><img src="./img/img2.jpg" style="width: 60px; height: 60px;"></div>
-                <hr><h1>Programming Calculator </h1></div>
+        </table>
+    </div>
+    <div class="container-fluid" style="height: 100px;">
 
-    </div></div>
-    
-    <div class="row">
-        <div class="col-md-12" style="padding-top: 6%;" >
-        <div class="col-md-4"  ng-repeat="x in sends"style="left: -50px;">
-            <div class='box' >
-                <a href="{{x.link}}">
-            <div class="col-md-12">
-                <img src="{{x.img}}"  height="100" width="200">
-            </div> 
-            <h2>{{x.name}}</h2></a>  
-            <p>{{x.data}}</p> 
-            <div class="down-line">
-            <p class="design-circle"></p> </div>
-            </div></div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" ng-repeat="x in sends">
+                    <div class="scroll_box">
+                        <a href="{{x.link}}">
+                            <div class="scroll_box_pic"><img ng-src="{{x.img}}"></div>
+                            <hr>
+                            <h1>{{x.name}}</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-        
+    <footer></footer>
+</body>
 
-
-                  
-        </body>
-        <footer></footer>
-    </html>
-    
+</html>
