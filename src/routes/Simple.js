@@ -49,13 +49,8 @@ export default function Simple(){
     return(
       <>
       <div className="container-fluid calculator-container">
-        <div className="row instructions">
-          <div className="col-md-4 instructions-content">
-            <h1>Instructions</h1>
-            <p>To calculate the sine of 55 degrees, follow these steps:</p>
-            {/* ... rest of the instructions */}
-          </div>
-          <div className="col-md-8">
+        <div className="row instructions" style={{margin:' auto'}}>
+          <div className="col-md-4">
             <table className="calculator-table">
               <tbody>
                 <tr>
@@ -84,6 +79,11 @@ export default function Simple(){
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="col-md-4 instructions-content">
+            <h1>Instructions</h1>
+            <p>To calculate the sine of 55 degrees, follow these steps:</p>
+            {/* ... rest of the instructions */}
           </div>
         </div>
       </div>
