@@ -1,0 +1,88 @@
+.calculator-container {
+    margin-top: 55px;
+  }
+  
+  .instructions {
+    align-items: center;
+  }
+  
+  .instructions-content {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .calculator-table {
+    align-self: center;
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .calculator-table td {
+    border: 1px solid rgb(20, 17, 17);
+    color: rgb(216, 211, 211);
+    font-size: 25px;
+    height: 90px;
+    background-color: rgba(197, 195, 195, 0.9);
+    border-radius: 7px;
+  }
+  
+  input[type="button"] {
+    border-color: rgb(20, 17, 17);
+    color: rgb(216, 211, 211);
+    font-size: 25px;
+    height: 90px;
+    background-color: rgba(22, 22, 22, 0.9);
+    border: solid;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  input[type="button"]:hover {
+    background-color: rgba(26, 25, 25, 0.8);
+  }
+  
+  input[type="button"]:active {
+    animation: button1 0s forwards;
+  }
+  
+  @keyframes button1 {
+    to {
+      background-color: rgb(148, 49, 240);
+    }
+  }
+  
+  input[type="text"] {
+    border-color: rgb(20, 17, 17);
+    color: rgb(250, 245, 245);
+    background-color: rgba(22, 22, 21, 0.959);
+    padding: 0px;
+    border: solid;
+    border-color: rgb(122, 121, 119);
+    width: 800px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  .result-textarea {
+    border-color: rgb(20, 17, 17);
+    color: rgb(250, 245, 245);
+    background-color: rgba(22, 22, 21, 0.959);
+    padding: 0px;
+    border: solid;
+    border-color: rgb(122, 121, 119);
+    width: 800px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    resize: none; /* Prevent textarea from being resizable */
+    outline: none; /* Remove the default focus outline */
+  }
+  
+  
