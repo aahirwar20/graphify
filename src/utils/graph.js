@@ -11,6 +11,9 @@ const generateChartData = (xValues = [1, 2, 3, 4], yValues = [1, 4, 9, 16], inpu
             tension: 0.1,
           },
         ],
+        options : {
+          maintainAspectRatio : false
+        }
       }
 }
 
