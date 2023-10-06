@@ -8,7 +8,7 @@
  - Programming Calculator
  ```
 
-[click here](https://aahirwar20.github.io/calculator/)
+[click here](https://aahirwar20.github.io/graphify/)
 # contribuion
 
 ## basic calculator

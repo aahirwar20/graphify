@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../stylesheets/Graph.css'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -56,32 +57,33 @@ const Graph =  () => {
 
   return (
     <>
-        <div className="container mt-5">
-          <div className="row mt-3">
-            <div className="col-md-10">
-              <Line options={chartData.options} data={chartData} />
+        <div className="container ">
+          <div className="row ">
+            <div className="col-lg-10 col-sm-12">
+              <div className="graph-container">
+                 <Line options={chartData.options  } data={chartData}/>
+              </div>
+             
+              
+              <div className="input-box">
+                  <input
+                    value={inputFunction}
+                    onChange={(e) => setInputFunction(e.target.value)}
+                    className="form-control input-box-input"
+                    placeholder="Enter your function (e.g., x^2)"
+                  />
+                 <button onClick={computeChartData} className="btn btn-primary input-box-plot">
+                    Plot
+                  </button>
+                
+              </div>
             </div>
-            <div className="col-md-2">
-                <button onClick={toggleScale} className="btn btn-primary">
-                   Toggle Scale
-                </button>
+            <div className="col-lg-2 button-container" >
+                <button onClick={toggleScale}  className="btn extra-button">  Toggle Scale  </button>       
             </div>
           </div>
         </div>
-        <div className="row mt-2">
-            <div className="col-md-2"></div>
-            <div className="col-md-6">
-              <input
-                value={inputFunction}
-                onChange={(e) => setInputFunction(e.target.value)}
-                className="form-control mb-3"
-                placeholder="Enter your function (e.g., x^2)"
-              />
-              <button onClick={computeChartData} className="btn btn-primary">
-                Generate Chart
-              </button>
-            </div>
-          </div>
+        
     </>
     
   );

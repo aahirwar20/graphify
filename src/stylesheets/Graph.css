@@ -1,0 +1,56 @@
+.input-box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.input-box-input{
+    position: relative;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.input-box-plot{
+    position: relative;
+    width: 30%;
+    margin-top: 2%;
+    height: 50px;
+}
+.button-container{
+    position: relative;
+    margin-top: 40px;
+}
+.extra-button{
+    border-radius: 20px;
+    background: #DCE5E4;
+}
+
+.graph-container {
+    position: relative;
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+ }
+
+ @media (min-width: 768px) {
+     .graph-container {
+         width: auto;
+         height: 70vh;
+      }
+ }
+
+
+@media screen and (max-width: 500px){
+    .input-box{
+        flex-direction: column;
+    }
+    .input-box-input{
+        width: 100%;
+        height: 70px;
+    }
+    
+    .input-box-plot{
+        width: 100%;
+    }
+}
