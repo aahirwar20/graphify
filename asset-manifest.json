@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphify/static/css/main.296d7400.css",
-    "main.js": "/graphify/static/js/main.1cb6e0d9.js",
+    "main.css": "/graphify/static/css/main.36561b82.css",
+    "main.js": "/graphify/static/js/main.f9be36c1.js",
     "static/js/787.d7dc4abb.chunk.js": "/graphify/static/js/787.d7dc4abb.chunk.js",
     "static/media/logo.png": "/graphify/static/media/logo.0373f32de9e0de66d66a.png",
     "static/media/unit.png": "/graphify/static/media/unit.9cdb2b584409af549bcf.png",
@@ -11,12 +11,12 @@
     "static/media/classic.png": "/graphify/static/media/classic.024604742ed9c62a9341.png",
     "static/media/graph.png": "/graphify/static/media/graph.dc6770ceb8628c9682ed.png",
     "index.html": "/graphify/index.html",
-    "main.296d7400.css.map": "/graphify/static/css/main.296d7400.css.map",
-    "main.1cb6e0d9.js.map": "/graphify/static/js/main.1cb6e0d9.js.map",
+    "main.36561b82.css.map": "/graphify/static/css/main.36561b82.css.map",
+    "main.f9be36c1.js.map": "/graphify/static/js/main.f9be36c1.js.map",
     "787.d7dc4abb.chunk.js.map": "/graphify/static/js/787.d7dc4abb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.296d7400.css",
-    "static/js/main.1cb6e0d9.js"
+    "static/css/main.36561b82.css",
+    "static/js/main.f9be36c1.js"
   ]
 }
